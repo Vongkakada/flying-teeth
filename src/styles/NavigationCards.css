@@ -1,0 +1,39 @@
+.navigation-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+  }
+  
+  .nav-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+  }
+  
+  .nav-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .nav-card-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .nav-card h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .navigation-cards {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,126 @@
+@import url('https://cdn.jsdelivr.net/npm/socicon@3.0.5/css/socicon.min.css');
+
+.team-page {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.team-title {
+  font-size: 36px;
+  color: #0077b6;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.team-subtitle {
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.team-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.card-img {
+  margin-bottom: 15px;
+}
+
+.team-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card-box {
+  padding: 0 10px;
+}
+
+.card-title {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.team-role {
+  font-size: 16px;
+  color: #0077b6;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.team-bio {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #0077b6;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #023e8a;
+}
+
+.socicon {
+  font-size: 20px;
+  padding: 5px;
+}
+
+@media (max-width: 992px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-photo {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-grid {
+    grid-template-columns: 2fr;
+  }
+
+  .team-photo {
+    height: 150px;
+  }
+
+  .team-title {
+    font-size: 28px;
+  }
+
+  .team-subtitle {
+    font-size: 16px;
+  }
+}
